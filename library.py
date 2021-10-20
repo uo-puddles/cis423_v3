@@ -1,12 +1,6 @@
 '''
 Chapter 3 asks for chapter 2 transformers to be placed here
 
-titanic_transformer = Pipeline(steps=[
-    ('drop', up.DropColumnsTransformer(['Age', 'Gender', 'Class', 'Joined', 'Married',  'Fare', 'Survived'], 'keep')),
-    ('gender', up.MappingTransformer('Gender', {'Male': 0, 'Female': 1})),
-    ('class', up.MappingTransformer('Class', {'Crew': 0, 'C3': 1, 'C2': 2, 'C1': 3})),
-    ('ohe', up.OHETransformer(target_column='Joined')),
-    ], verbose=True)
 '''
 from sklearn.base import BaseEstimator, TransformerMixin
 
